@@ -2,19 +2,6 @@ import { SearchBar, onSearchFunc} from "@yext/search-ui-react";
 import { useSearchActions} from "@yext/search-headless-react";
 import React from "react";
 
-// var handleSearch = function (searchEventData) {
-//   var query = searchEventData.query;
-//   searchActions.executeVerticalQuery();
-//   var queryParams = new URLSearchParams(window.location.search);
-//   if (query) {
-//       queryParams.set("query", query);
-//   }
-//   else {
-//       queryParams.delete("query");
-//   }
-//   history.pushState(null, "", "?" + queryParams.toString());
-// };
-
 const Navigation = () => {
 
   const searchActions = useSearchActions();
