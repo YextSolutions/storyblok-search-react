@@ -1,0 +1,1 @@
+# storyblok-search-react
