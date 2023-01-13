@@ -1,10 +1,10 @@
-# Storyblok React Starter
+# Storyblok React Starter with Yext Search React Components
 
-This is the example repository for building a blog with Storyblok.
+## Demonstration of how to add Search Headless React components to power search on a Storyblok experience. 
 
-1. Clone the example space with this link: <https://app.storyblok.com/#!/build/95804>
-2. Enter your preview token in the `index.js` file
-3. Add your [http://localhost:3000](http://localhost:3000) as the **default location URL** in your Storyblok space settings
+Use this repo to view the source code for the completed Storyblok x Yext React Project. This repo contains code for a mock travel blog website that contains a Yext powered search experience. This project was created using the Storyblok React Starter (https://github.com/storyblok/storyblok-react-starter) and Yext React Components (https://github.com/yext/search-headless-react).
+
+This Storyblok React x Yext project contains code to support three entity types (author, guides, and blog posts). Please use the Storyblok x Yext Demo guide from Yext Hitchhikers site to follow through setting up this project from stratch.
 
 ## Available Scripts
 
