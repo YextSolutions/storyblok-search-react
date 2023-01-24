@@ -1,0 +1,16 @@
+{
+  "$id": "ce_author.default",
+  "$schema": "https://schema.yext.com/config/km/field-eligibility-group/v1",
+  "name": "Author-default",
+  "entityType": "ce_author",
+  "fields": [
+    "c_author",
+    "c_dateCreated",
+    "c_shortIntro",
+    "datePosted",
+    "landingPageUrl",
+    "primaryPhoto",
+    "richTextDescription"
+  ],
+  "required": []
+}

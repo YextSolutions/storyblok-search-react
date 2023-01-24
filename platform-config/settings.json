@@ -1,0 +1,21 @@
+{
+  "$schema": "https://schema.yext.com/config/km/settings/v1",
+  "primaryEntityType": "helpArticle",
+  "entityTypeSettings": [
+    {
+      "entityType": "ce_guides",
+      "defaultFieldEligibilityGroup": "ce_guides.default",
+      "disabled": false
+    },
+    {
+      "entityType": "helpArticle",
+      "defaultFieldEligibilityGroup": "helpArticle.default",
+      "disabled": false
+    },
+    {
+      "entityType": "ce_author",
+      "defaultFieldEligibilityGroup": "ce_author.default",
+      "disabled": false
+    }
+  ]
+}

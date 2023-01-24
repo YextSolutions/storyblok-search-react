@@ -1,0 +1,329 @@
+{
+  "$id": "guideConnectorTravel",
+  "$schema": "https://schema.yext.com/config/km/connector/v3",
+  "displayName": "Guide Connector - Travel",
+  "entityType": "ce_guides",
+  "source": {
+    "sourceConfig": {
+      "nativeSourceConfig": {
+        "source": "storyblok",
+        "operation": "fetchStories",
+        "inputs": {
+          "apiKey": "${{storyblokApi}}",
+          "storySlug": "guides/"
+        }
+      }
+    },
+    "selectors": [
+      {
+        "type": "JSON",
+        "header": "name",
+        "path": "name"
+      },
+      {
+        "type": "JSON",
+        "header": "created_at",
+        "path": "created_at"
+      },
+      {
+        "type": "JSON",
+        "header": "published_at",
+        "path": "published_at"
+      },
+      {
+        "type": "JSON",
+        "header": "id",
+        "path": "id"
+      },
+      {
+        "type": "JSON",
+        "header": "uuid",
+        "path": "uuid"
+      },
+      {
+        "type": "JSON",
+        "header": "content._uid",
+        "path": "content._uid"
+      },
+      {
+        "type": "JSON",
+        "header": "content.body[]._uid",
+        "path": "content.body[]._uid"
+      },
+      {
+        "type": "JSON",
+        "header": "content.body[].image.id",
+        "path": "content.body[].image.id"
+      },
+      {
+        "type": "JSON",
+        "header": "content.body[].image.alt",
+        "path": "content.body[].image.alt"
+      },
+      {
+        "type": "JSON",
+        "header": "content.body[].image.name",
+        "path": "content.body[].image.name"
+      },
+      {
+        "type": "JSON",
+        "header": "content.body[].image.focus",
+        "path": "content.body[].image.focus"
+      },
+      {
+        "type": "JSON",
+        "header": "content.body[].image.title",
+        "path": "content.body[].image.title"
+      },
+      {
+        "type": "JSON",
+        "header": "content.body[].image.filename",
+        "path": "content.body[].image.filename"
+      },
+      {
+        "type": "JSON",
+        "header": "content.body[].image.copyright",
+        "path": "content.body[].image.copyright"
+      },
+      {
+        "type": "JSON",
+        "header": "content.body[].image.fieldtype",
+        "path": "content.body[].image.fieldtype"
+      },
+      {
+        "type": "JSON",
+        "header": "content.body[].headline",
+        "path": "content.body[].headline"
+      },
+      {
+        "type": "JSON",
+        "header": "content.body[].component",
+        "path": "content.body[].component"
+      },
+      {
+        "type": "JSON",
+        "header": "content.body[].posts",
+        "path": "content.body[].posts"
+      },
+      {
+        "type": "JSON",
+        "header": "content.component",
+        "path": "content.component"
+      },
+      {
+        "type": "JSON",
+        "header": "slug",
+        "path": "slug"
+      },
+      {
+        "type": "JSON",
+        "header": "full_slug",
+        "path": "full_slug"
+      },
+      {
+        "type": "JSON",
+        "header": "sort_by_date",
+        "path": "sort_by_date"
+      },
+      {
+        "type": "JSON",
+        "header": "position",
+        "path": "position"
+      },
+      {
+        "type": "JSON",
+        "header": "tag_list",
+        "path": "tag_list"
+      },
+      {
+        "type": "JSON",
+        "header": "is_startpage",
+        "path": "is_startpage"
+      },
+      {
+        "type": "JSON",
+        "header": "parent_id",
+        "path": "parent_id"
+      },
+      {
+        "type": "JSON",
+        "header": "meta_data",
+        "path": "meta_data"
+      },
+      {
+        "type": "JSON",
+        "header": "group_id",
+        "path": "group_id"
+      },
+      {
+        "type": "JSON",
+        "header": "first_published_at",
+        "path": "first_published_at"
+      },
+      {
+        "type": "JSON",
+        "header": "release_id",
+        "path": "release_id"
+      },
+      {
+        "type": "JSON",
+        "header": "lang",
+        "path": "lang"
+      },
+      {
+        "type": "JSON",
+        "header": "path",
+        "path": "path"
+      },
+      {
+        "type": "JSON",
+        "header": "alternates",
+        "path": "alternates"
+      },
+      {
+        "type": "JSON",
+        "header": "default_full_slug",
+        "path": "default_full_slug"
+      },
+      {
+        "type": "JSON",
+        "header": "translated_slugs",
+        "path": "translated_slugs"
+      },
+      {
+        "type": "JSON",
+        "header": "content.image",
+        "path": "content.image"
+      },
+      {
+        "type": "JSON",
+        "header": "content.intro",
+        "path": "content.intro"
+      },
+      {
+        "type": "JSON",
+        "header": "content.title",
+        "path": "content.title"
+      },
+      {
+        "type": "JSON",
+        "header": "content.author",
+        "path": "content.author"
+      },
+      {
+        "type": "JSON",
+        "header": "content.long_text.type",
+        "path": "content.long_text.type"
+      },
+      {
+        "type": "JSON",
+        "header": "content.long_text.content[].type",
+        "path": "content.long_text.content[].type"
+      },
+      {
+        "type": "JSON",
+        "header": "content.long_text.content[].content[].text",
+        "path": "content.long_text.content[].content[].text"
+      },
+      {
+        "type": "JSON",
+        "header": "content.long_text.content[].content[].type",
+        "path": "content.long_text.content[].content[].type"
+      }
+    ]
+  },
+  "transforms": [
+    {
+      "extractText": {
+        "inputHeader": "created_at",
+        "newColumnHeader": "created_at_date",
+        "extractOperation": "ALL_TEXT_BEFORE",
+        "extractFrom": "FIRST_INSTANCE_MATCHING_TEXT",
+        "valueToFind": {
+          "plainText": {
+            "value": "T",
+            "ignoreCase": false
+          }
+        }
+      }
+    },
+    {
+      "extractText": {
+        "inputHeader": "published_at",
+        "newColumnHeader": "published_at_date",
+        "extractOperation": "ALL_TEXT_BEFORE",
+        "extractFrom": "FIRST_INSTANCE_MATCHING_TEXT",
+        "valueToFind": {
+          "plainText": {
+            "value": "T",
+            "ignoreCase": false
+          }
+        }
+      }
+    },
+    {
+      "extractText": {
+        "inputHeader": "content.image",
+        "newColumnHeader": "Primary Photo URL",
+        "extractOperation": "ALL_TEXT_AFTER",
+        "extractFrom": "FIRST_INSTANCE_MATCHING_TEXT",
+        "valueToFind": {
+          "plainText": {
+            "value": "//",
+            "ignoreCase": false
+          }
+        }
+      }
+    },
+    {
+      "addColumn": {
+        "newColumnHeader": "Label",
+        "columnValue": "Travel"
+      }
+    }
+  ],
+  "mappings": [
+    {
+      "field": "c_author",
+      "header": "content.author",
+      "subfieldPath": []
+    },
+    {
+      "field": "body",
+      "header": "content.long_text.content[].content[].text",
+      "subfieldPath": []
+    },
+    {
+      "field": "name",
+      "header": "name",
+      "subfieldPath": []
+    },
+    {
+      "field": "shortDescription",
+      "header": "content.intro",
+      "subfieldPath": []
+    },
+    {
+      "field": "entityId",
+      "header": "uuid",
+      "subfieldPath": []
+    },
+    {
+      "field": "primaryPhoto",
+      "header": "Primary Photo URL",
+      "subfieldPath": [
+        {
+          "name": "image"
+        },
+        {
+          "name": "url"
+        }
+      ]
+    },
+    {
+      "field": "labels",
+      "header": "Label",
+      "subfieldPath": []
+    }
+  ]
+}

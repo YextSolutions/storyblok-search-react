@@ -1,0 +1,22 @@
+{
+  "$id": "c_author",
+  "$schema": "https://schema.yext.com/config/km/field/v1",
+  "displayName": "Author",
+  "group": "NONE",
+  "localization": "PRIMARY_ONLY",
+  "type": {
+    "listType": {
+      "typeId": "entityReference",
+      "maxLength": 5000,
+      "type": {
+        "entityReferenceType": {
+          "supportedEntityTypeIds": [
+            "ce_author"
+          ],
+          "type": "ONE_WAY"
+        }
+      }
+    }
+  },
+  "typeId": "list"
+}

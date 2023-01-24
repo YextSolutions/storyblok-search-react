@@ -1,0 +1,63 @@
+{
+  "$id": "ce_author",
+  "$schema": "https://schema.yext.com/config/km/field-presentation/v1",
+  "entityType": "ce_author",
+  "displayName": "Author",
+  "presentationEntries": [
+    {
+      "displayName": "Content",
+      "entryType": "DIVIDER"
+    },
+    {
+      "displayName": "Core Information",
+      "entryType": "SECTION",
+      "fields": [
+        {
+          "id": "name",
+          "visibleOnAdd": true
+        },
+        {
+          "id": "entityId",
+          "visibleOnAdd": true
+        },
+        {
+          "id": "richTextDescription"
+        },
+        {
+          "id": "landingPageUrl"
+        },
+        {
+          "id": "primaryPhoto"
+        },
+        {
+          "id": "c_shortIntro"
+        },
+        {
+          "id": "datePosted"
+        },
+        {
+          "id": "c_dateCreated"
+        },
+        {
+          "id": "c_author"
+        }
+      ]
+    },
+    {
+      "displayName": "Other",
+      "entryType": "DIVIDER"
+    },
+    {
+      "displayName": "Internal Use Only",
+      "entryType": "SECTION",
+      "fields": [
+        {
+          "id": "folder"
+        },
+        {
+          "id": "labels"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,125 @@
+{
+  "$schema": "https://schema.yext.com/config/answers/answers-config/v1",
+  "$id": "storyblok-travel-search",
+  "name": "Storyblok Travel Search",
+  "supportedLocales": [],
+  "countryRestrictions": [],
+  "verticals": {
+    "author": {
+      "entityTypes": [
+        "ce_author"
+      ],
+      "name": "Author",
+      "searchableFields": {
+        "builtin.entityType": {
+          "nlpFilter": true
+        },
+        "c_dateCreated": {
+          "facet": true,
+          "sortable": true
+        },
+        "datePosted": {
+          "facet": true,
+          "sortable": true
+        },
+        "name": {
+          "semanticTextSearch": true
+        },
+        "richTextDescription": {
+          "documentSearch": true
+        }
+      },
+      "sortBys": [],
+      "source": "KNOWLEDGE_MANAGER"
+    },
+    "guides": {
+      "entityTypes": [
+        "ce_guides"
+      ],
+      "name": "Guides",
+      "searchableFields": {
+        "builtin.entityType": {
+          "nlpFilter": true
+        },
+        "c_author.name": {
+          "semanticTextSearch": true
+        },
+        "c_dateCreated": {
+          "facet": true,
+          "sortable": true
+        },
+        "c_shortIntro": {
+          "textSearch": true
+        },
+        "datePosted": {
+          "facet": true,
+          "sortable": true
+        },
+        "name": {
+          "semanticTextSearch": true
+        },
+        "shortDescription": {
+          "documentSearch": true
+        }
+      },
+      "sortBys": [],
+      "source": "KNOWLEDGE_MANAGER"
+    },
+    "help_articles": {
+      "entityTypes": [
+        "helpArticle"
+      ],
+      "name": "Help Articles",
+      "searchableFields": {
+        "body": {
+          "documentSearch": true
+        },
+        "builtin.entityType": {
+          "nlpFilter": true
+        },
+        "c_author.name": {
+          "semanticTextSearch": true
+        },
+        "c_headline": {
+          "textSearch": true
+        },
+        "externalArticlePostDate": {
+          "facet": true,
+          "sortable": true
+        },
+        "externalArticleUpdateDate": {
+          "facet": true,
+          "sortable": true
+        },
+        "name": {
+          "semanticTextSearch": true
+        },
+        "shortDescription": {
+          "textSearch": true
+        }
+      },
+      "sortBys": [],
+      "source": "KNOWLEDGE_MANAGER"
+    }
+  },
+  "localizations": {},
+  "additionalSearchablePlaces": [],
+  "querySuggestions": {
+    "disablePopularQueries": false,
+    "verticalPromptsOnEmpty": false,
+    "popularQueriesBlacklistedTerms": [],
+    "universalPrompts": [
+      "What is a good place to go surfing?",
+      "What is a popular dish in Vietnam?",
+      "What should I do when I visit Africa?"
+    ],
+    "verticalPrompts": {
+      "author": [
+        "[[name]]"
+      ],
+      "guides": [
+        "[[name]]"
+      ]
+    }
+  }
+}

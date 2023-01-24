@@ -1,0 +1,16 @@
+{
+  "$id": "ce_guides.default",
+  "$schema": "https://schema.yext.com/config/km/field-eligibility-group/v1",
+  "name": "Guides-default",
+  "entityType": "ce_guides",
+  "fields": [
+    "body",
+    "c_author",
+    "c_dateCreated",
+    "c_shortIntro",
+    "datePosted",
+    "primaryPhoto",
+    "shortDescription"
+  ],
+  "required": []
+}

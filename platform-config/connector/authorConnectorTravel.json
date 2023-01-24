@@ -1,0 +1,455 @@
+{
+  "$id": "authorConnectorTravel",
+  "$schema": "https://schema.yext.com/config/km/connector/v3",
+  "displayName": "Author Connector - Travel",
+  "entityType": "ce_author",
+  "source": {
+    "sourceConfig": {
+      "nativeSourceConfig": {
+        "source": "storyblok",
+        "operation": "fetchStories",
+        "inputs": {
+          "apiKey": "${{storyblokApi}}",
+          "storySlug": "author/"
+        }
+      }
+    },
+    "selectors": [
+      {
+        "type": "JSON",
+        "header": "name",
+        "path": "name"
+      },
+      {
+        "type": "JSON",
+        "header": "created_at",
+        "path": "created_at"
+      },
+      {
+        "type": "JSON",
+        "header": "published_at",
+        "path": "published_at"
+      },
+      {
+        "type": "JSON",
+        "header": "id",
+        "path": "id"
+      },
+      {
+        "type": "JSON",
+        "header": "uuid",
+        "path": "uuid"
+      },
+      {
+        "type": "JSON",
+        "header": "content._uid",
+        "path": "content._uid"
+      },
+      {
+        "type": "JSON",
+        "header": "content.body[]._uid",
+        "path": "content.body[]._uid"
+      },
+      {
+        "type": "JSON",
+        "header": "content.body[].image.id",
+        "path": "content.body[].image.id"
+      },
+      {
+        "type": "JSON",
+        "header": "content.body[].image.alt",
+        "path": "content.body[].image.alt"
+      },
+      {
+        "type": "JSON",
+        "header": "content.body[].image.name",
+        "path": "content.body[].image.name"
+      },
+      {
+        "type": "JSON",
+        "header": "content.body[].image.focus",
+        "path": "content.body[].image.focus"
+      },
+      {
+        "type": "JSON",
+        "header": "content.body[].image.title",
+        "path": "content.body[].image.title"
+      },
+      {
+        "type": "JSON",
+        "header": "content.body[].image.filename",
+        "path": "content.body[].image.filename"
+      },
+      {
+        "type": "JSON",
+        "header": "content.body[].image.copyright",
+        "path": "content.body[].image.copyright"
+      },
+      {
+        "type": "JSON",
+        "header": "content.body[].image.fieldtype",
+        "path": "content.body[].image.fieldtype"
+      },
+      {
+        "type": "JSON",
+        "header": "content.body[].headline",
+        "path": "content.body[].headline"
+      },
+      {
+        "type": "JSON",
+        "header": "content.body[].component",
+        "path": "content.body[].component"
+      },
+      {
+        "type": "JSON",
+        "header": "content.body[].main.id",
+        "path": "content.body[].main.id"
+      },
+      {
+        "type": "JSON",
+        "header": "content.body[].main.alt",
+        "path": "content.body[].main.alt"
+      },
+      {
+        "type": "JSON",
+        "header": "content.body[].main.name",
+        "path": "content.body[].main.name"
+      },
+      {
+        "type": "JSON",
+        "header": "content.body[].main.focus",
+        "path": "content.body[].main.focus"
+      },
+      {
+        "type": "JSON",
+        "header": "content.body[].main.title",
+        "path": "content.body[].main.title"
+      },
+      {
+        "type": "JSON",
+        "header": "content.body[].main.filename",
+        "path": "content.body[].main.filename"
+      },
+      {
+        "type": "JSON",
+        "header": "content.body[].main.copyright",
+        "path": "content.body[].main.copyright"
+      },
+      {
+        "type": "JSON",
+        "header": "content.body[].main.fieldtype",
+        "path": "content.body[].main.fieldtype"
+      },
+      {
+        "type": "JSON",
+        "header": "content.body[].main.is_external_url",
+        "path": "content.body[].main.is_external_url"
+      },
+      {
+        "type": "JSON",
+        "header": "content.body[].text.type",
+        "path": "content.body[].text.type"
+      },
+      {
+        "type": "JSON",
+        "header": "content.body[].text.content[].type",
+        "path": "content.body[].text.content[].type"
+      },
+      {
+        "type": "JSON",
+        "header": "content.body[].text.content[].content[].text",
+        "path": "content.body[].text.content[].content[].text"
+      },
+      {
+        "type": "JSON",
+        "header": "content.body[].text.content[].content[].type",
+        "path": "content.body[].text.content[].content[].type"
+      },
+      {
+        "type": "JSON",
+        "header": "content.body[].columns[]._uid",
+        "path": "content.body[].columns[]._uid"
+      },
+      {
+        "type": "JSON",
+        "header": "content.body[].columns[].icon",
+        "path": "content.body[].columns[].icon"
+      },
+      {
+        "type": "JSON",
+        "header": "content.body[].columns[].name",
+        "path": "content.body[].columns[].name"
+      },
+      {
+        "type": "JSON",
+        "header": "content.body[].columns[].component",
+        "path": "content.body[].columns[].component"
+      },
+      {
+        "type": "JSON",
+        "header": "content.body[].columns[].description",
+        "path": "content.body[].columns[].description"
+      },
+      {
+        "type": "JSON",
+        "header": "content.option",
+        "path": "content.option"
+      },
+      {
+        "type": "JSON",
+        "header": "content.results.id",
+        "path": "content.results.id"
+      },
+      {
+        "type": "JSON",
+        "header": "content.results.url",
+        "path": "content.results.url"
+      },
+      {
+        "type": "JSON",
+        "header": "content.results.linktype",
+        "path": "content.results.linktype"
+      },
+      {
+        "type": "JSON",
+        "header": "content.results.fieldtype",
+        "path": "content.results.fieldtype"
+      },
+      {
+        "type": "JSON",
+        "header": "content.results.cached_url",
+        "path": "content.results.cached_url"
+      },
+      {
+        "type": "JSON",
+        "header": "content.component",
+        "path": "content.component"
+      },
+      {
+        "type": "JSON",
+        "header": "slug",
+        "path": "slug"
+      },
+      {
+        "type": "JSON",
+        "header": "full_slug",
+        "path": "full_slug"
+      },
+      {
+        "type": "JSON",
+        "header": "sort_by_date",
+        "path": "sort_by_date"
+      },
+      {
+        "type": "JSON",
+        "header": "position",
+        "path": "position"
+      },
+      {
+        "type": "JSON",
+        "header": "tag_list",
+        "path": "tag_list"
+      },
+      {
+        "type": "JSON",
+        "header": "is_startpage",
+        "path": "is_startpage"
+      },
+      {
+        "type": "JSON",
+        "header": "parent_id",
+        "path": "parent_id"
+      },
+      {
+        "type": "JSON",
+        "header": "meta_data",
+        "path": "meta_data"
+      },
+      {
+        "type": "JSON",
+        "header": "group_id",
+        "path": "group_id"
+      },
+      {
+        "type": "JSON",
+        "header": "first_published_at",
+        "path": "first_published_at"
+      },
+      {
+        "type": "JSON",
+        "header": "release_id",
+        "path": "release_id"
+      },
+      {
+        "type": "JSON",
+        "header": "lang",
+        "path": "lang"
+      },
+      {
+        "type": "JSON",
+        "header": "path",
+        "path": "path"
+      },
+      {
+        "type": "JSON",
+        "header": "alternates",
+        "path": "alternates"
+      },
+      {
+        "type": "JSON",
+        "header": "default_full_slug",
+        "path": "default_full_slug"
+      },
+      {
+        "type": "JSON",
+        "header": "translated_slugs",
+        "path": "translated_slugs"
+      },
+      {
+        "type": "JSON",
+        "header": "content.image",
+        "path": "content.image"
+      },
+      {
+        "type": "JSON",
+        "header": "content.intro",
+        "path": "content.intro"
+      },
+      {
+        "type": "JSON",
+        "header": "content.title",
+        "path": "content.title"
+      },
+      {
+        "type": "JSON",
+        "header": "content.author",
+        "path": "content.author"
+      },
+      {
+        "type": "JSON",
+        "header": "content.long_text.type",
+        "path": "content.long_text.type"
+      },
+      {
+        "type": "JSON",
+        "header": "content.long_text.content[].type",
+        "path": "content.long_text.content[].type"
+      },
+      {
+        "type": "JSON",
+        "header": "content.long_text.content[].content[].text",
+        "path": "content.long_text.content[].content[].text"
+      }
+    ]
+  },
+  "transforms": [
+    {
+      "addColumn": {
+        "newColumnHeader": "label",
+        "columnValue": "Travel"
+      }
+    },
+    {
+      "extractText": {
+        "inputHeader": "created_at",
+        "newColumnHeader": "created_at_date",
+        "extractOperation": "ALL_TEXT_BEFORE",
+        "extractFrom": "OFFSET_FROM_BEGINNING",
+        "offsetLength": 10
+      }
+    },
+    {
+      "extractText": {
+        "inputHeader": "published_at",
+        "newColumnHeader": "published_at_date",
+        "extractOperation": "ALL_TEXT_BEFORE",
+        "extractFrom": "OFFSET_FROM_BEGINNING",
+        "offsetLength": 10
+      }
+    },
+    {
+      "extractText": {
+        "inputHeader": "content.image",
+        "newColumnHeader": "Primary Image",
+        "extractOperation": "ALL_TEXT_AFTER",
+        "extractFrom": "FIRST_INSTANCE_MATCHING_TEXT",
+        "valueToFind": {
+          "plainText": {
+            "value": "//",
+            "ignoreCase": false
+          }
+        }
+      }
+    },
+    {
+      "addColumn": {
+        "newColumnHeader": "Domain Name",
+        "columnValue": "https://local:3000"
+      }
+    },
+    {
+      "mergeColumns": {
+        "inputHeaders": [
+          "Domain Name",
+          "full_slug"
+        ],
+        "newColumnHeader": "Landing Page URL",
+        "delimiter": "/"
+      }
+    }
+  ],
+  "mappings": [
+    {
+      "field": "datePosted",
+      "header": "published_at_date",
+      "subfieldPath": []
+    },
+    {
+      "field": "primaryPhoto",
+      "header": "Primary Image",
+      "subfieldPath": [
+        {
+          "name": "image"
+        },
+        {
+          "name": "url"
+        }
+      ]
+    },
+    {
+      "field": "richTextDescription",
+      "header": "content.long_text.content[].content[].text",
+      "subfieldPath": []
+    },
+    {
+      "field": "name",
+      "header": "name",
+      "subfieldPath": []
+    },
+    {
+      "field": "labels",
+      "header": "label",
+      "subfieldPath": []
+    },
+    {
+      "field": "c_shortIntro",
+      "header": "content.intro",
+      "subfieldPath": []
+    },
+    {
+      "field": "entityId",
+      "header": "uuid",
+      "subfieldPath": []
+    },
+    {
+      "field": "c_dateCreated",
+      "header": "created_at_date",
+      "subfieldPath": []
+    },
+    {
+      "field": "landingPageUrl",
+      "header": "Landing Page URL",
+      "subfieldPath": []
+    }
+  ]
+}
