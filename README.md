@@ -13,7 +13,9 @@ This repo contains custom configurations to setup three Storyblok connectors, tw
 - Guides
 - Help Article
 
-## Steps to initalize the project for Storyblok x Yext Travel Blog can be found on the Storyblok Hitchhiker Guide. A high-level summary of the steps are included below.
+## Steps to initalize the project for Storyblok x Yext Travel Blog can be found on the Storyblok Hitchhiker Guide. 
+
+A high-level summary of the steps are included below.
 1. Apply the platform-config files to your Yext account to configure the Yext search experience
   - Note the Yext API and Experience Key for your reference
 2. Copy the Storyblok space to your Storyblok account 
