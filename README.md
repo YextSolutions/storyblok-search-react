@@ -24,7 +24,7 @@ A high-level summary of the steps are included below.
 
 In the project directory, you can run:
 
-####`npm run dev`
+###`npm run dev`
 
 Runs the app in the development mode.\
 Open [http://localhost:5173/search](http://localhost:5173/search) to view it in the browser.
