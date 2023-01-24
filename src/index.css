@@ -1,7 +1,0 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
-
-.bg-white-half {
-  background: linear-gradient(to bottom, #fff 0%, #fff 50%, transparent 50%);
-}
