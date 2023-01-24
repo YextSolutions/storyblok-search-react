@@ -6,6 +6,14 @@ Use this repo to view the source code for the completed Storyblok x Yext React P
 
 This Storyblok React x Yext project contains code to support three entity types (author, guides, and blog posts). Please use the Storyblok x Yext Demo guide from Yext Hitchhikers site to follow through setting up this project from stratch. This project should use the Storyblok Demo CaC files (https://github.com/YextSolutions/storyblok-search-react-CaC) to quickly configure a Yext search experience that is compatible with the entity types in this React project.
 
+This repo contains custom configurations to setup three Storyblok connectors, two custom entity types, two labels and five new data fields.
+
+### Entity Types included
+- Author
+- Guides
+- Help Article
+
+
 In the project directory, you can run:
 
 ### `npm start`
