@@ -1,10 +1,10 @@
 # Storyblok React Starter with Yext Search React Components
 
-Demonstration of how to add Search Headless React components to power search on a Storyblok experience. 
+Demonstration of how to add Search Headless React components to generate a search results page that can be added on a Storyblok project. 
 
-Use this repo to view the source code for the completed Storyblok x Yext React Project. This repo contains code for a mock travel blog website that contains a Yext powered search experience. This project was created using the Storyblok React Starter (https://github.com/storyblok/storyblok-react-starter) and Yext React Components (https://github.com/yext/search-headless-react).
+Use this repo to view the source code for the completed Storyblok x Yext React Project. This repo contains code that generates a search results landing page for a mock travel blog website that contains a Yext powered search experience. This project was created using the Storyblok React Starter (https://github.com/storyblok/storyblok-react-starter) and Yext React Components (https://github.com/yext/search-headless-react).
 
-This Storyblok React x Yext project contains code to support three entity types (author, guides, and blog posts). Please use the Storyblok x Yext Demo guide from Yext Hitchhikers site to follow through setting up this project from stratch. This project should use the Storyblok Demo CaC files (https://github.com/YextSolutions/storyblok-search-react-CaC) to quickly configure a Yext search experience that is compatible with the entity types in this React project.
+This Storyblok React x Yext project contains code to support three entity types (author, guides, and blog posts). Please use the Storyblok x Yext Demo guide from Yext Hitchhikers site to customize this search results landing page. This project includes Yext platform configuration files to quickly pull content from Storyblok content to Yext, configure custom entity types used in this project, and generate a Yext search experience.
 
 This repo contains custom configurations to setup three Storyblok connectors, two custom entity types, two labels and five new data fields.
 
@@ -13,28 +13,18 @@ This repo contains custom configurations to setup three Storyblok connectors, tw
 - Guides
 - Help Article
 
+## Steps to initalize the project for Storyblok x Yext Travel Blog can be found on the Storyblok Hitchhiker Guide. A high-level summary of the steps are included below.
+1. Apply the platform-config files to your Yext account to configure the Yext search experience
+  - Note the Yext API and Experience Key for your reference
+2. Copy the Storyblok space to your Storyblok account 
+  - Note the Storyblok Preview API Key for your reference
+3. Open the repo locally and inject the Storyblok Preview API key, Yext API key, and Experience key where appropriate in the main.tsx file.
 
 In the project directory, you can run:
 
-### `npm start`
+####`npm run dev`
 
 Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+Open [http://localhost:5173/search](http://localhost:5173/search) to view it in the browser.
 
 The page will reload if you make edits.\
-You will also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
