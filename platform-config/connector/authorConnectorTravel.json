@@ -380,22 +380,6 @@
           }
         }
       }
-    },
-    {
-      "addColumn": {
-        "newColumnHeader": "Domain Name",
-        "columnValue": "https://local:3000"
-      }
-    },
-    {
-      "mergeColumns": {
-        "inputHeaders": [
-          "Domain Name",
-          "full_slug"
-        ],
-        "newColumnHeader": "Landing Page URL",
-        "delimiter": "/"
-      }
     }
   ],
   "mappings": [
@@ -444,11 +428,6 @@
     {
       "field": "c_dateCreated",
       "header": "created_at_date",
-      "subfieldPath": []
-    },
-    {
-      "field": "landingPageUrl",
-      "header": "Landing Page URL",
       "subfieldPath": []
     }
   ]
