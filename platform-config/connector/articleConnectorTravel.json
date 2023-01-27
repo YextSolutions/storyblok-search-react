@@ -10,7 +10,7 @@
         "operation": "fetchStories",
         "inputs": {
           "apiKey": "${{storyblokApi}}",
-          "storySlug": "blog/"
+          "storySlug": "${{firstSlug}}"
         }
       }
     },
