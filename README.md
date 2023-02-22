@@ -26,6 +26,8 @@ In the project directory, you can run:
 
 `npm run dev`
 
+*Note: You may need to run `npm install` within the project directory to initialize the appropriate library
+
 Runs the app in the development mode.\
 Open [http://localhost:5173/search](http://localhost:5173/search) to view it in the browser.
 
