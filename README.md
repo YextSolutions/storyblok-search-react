@@ -29,7 +29,7 @@ In the project directory, you can run:
 * Note: You may need to run `npm install` within the project directory to initialize the appropriate library
 
 Runs the app in the development mode.\
-Open [http://localhost:5173/search](http://localhost:5173/search) to view it in the browser.\
+Open [http://localhost:5173/search](http://localhost:5173/search) to view it in the browser.
 
 * Note: You must include `/search` in the domain to view the search results page.
 
