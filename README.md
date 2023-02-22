@@ -30,5 +30,6 @@ In the project directory, you can run:
 
 Runs the app in the development mode.\
 Open [http://localhost:5173/search](http://localhost:5173/search) to view it in the browser.
+*Note: You must include the /search in the domain to view the search results page.
 
-The page will reload if you make edits.\
+The page will reload if you make edits.
